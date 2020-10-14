@@ -32,19 +32,37 @@ That one got away from me. Sorry.
 
 ##### General Looping Problems
 
-* `addAll` - given an array of numbers, returns the sum of all numbers added together.
-* `countSpaces` - given a string, returns the number of characters that are spaces.
-* `countTrues` - given an array of booleans, returns the number of `true` values.
-* `makeFriendly` - given a paragraph, returns a paragraph where each sentence ends with an exclamation point instead of the period it held before.
+* `addAll` - given an array of numbers, returns the sum of all numbers added together. **HINT:** this is a reduce problem, reducing a collection of values to one value. In this case, a collection of numbers to one total sum.
+* `countSpaces` - given a string, returns the number of characters that are spaces. **HINT:** this is a reduce problem, reducing a collection of values to one value.
+* `countTrues` - given an array of booleans, returns the number of `true` values. **HINT:** this is a reduce problem, reducing a collection of values to one value.
+* `makeFriendly` - given a paragraph, returns a paragraph where each sentence ends with an exclamation point instead of the period it held before. **HINT:** this is a string-building problem, and you'll want to mostly append to the string you'll return each character, except when you hit a period.
 
 
-##### Maps
+**Maps**
+
+##### A Helpful Reminder
+
+A map:
+
+* returns the same number of items as in the original collection
+* with some items transformed
+
+##### Exercises
 
 * `cubeAll` - given an array of numbers, returns an array where each number has been cubed (a.k.a. raised to the third power).
 * `addNoises` - given an array of strings, returns an array where each string has appended to it that animal's noise. See tests for examples! **HINT:** You're definitely going to have to check for each tested-for animal name, but you could use a compound boolean in your `if` check, or set up an array of your own animals and use `.includes`, or use a `switch` statement. Either way, you can look at the tests to see which names should be considered which animals!
 
 
-##### Filters
+**Filters**
+
+##### A Helpful Reminder
+
+A filter:
+
+* returns the same number of items or fewer (usually fewer!)
+* with NO items transformed
+
+##### Exercises
 
 * `womenOnly` - given an array of strings with names and gender, returns an array of only those strings where the gender (the last character in the string) is 'F'. **HINT:** you can check the character at last index of the string to see if it's an `F`, but there's also a string method that tells you if a string "ends with" another string. [Duck it!](https://duckduckgo.com/)
 * `integersOnly` - given an array of numbers, returns an array of only those numbers that are integers. **HINT:** you can use modulus for htis, it's just SEEMS weird to do so.
