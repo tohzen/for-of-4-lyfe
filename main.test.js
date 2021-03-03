@@ -49,27 +49,30 @@ function cubeAll(arr) {
 }
 
 function addNoises(arr) {
-  var theone = [];
-  var animals = {};
-  animals = {
-    dogs: ['Fido', 'Rolph', 'Maisie'],
-    cats: ['Garfield', 'Heathcliff'],
-    dinos: ['Barnie', 'Sharp Tooth']
+  let animalNoise = [];
+  for (const name of arr) {
+      if (
+          name === "Fido" ||
+          name === "Maisie" ||
+          name === "Rolph"
+      ) {
+          animalNoise.push(name + " says \"Woof!\"");
+      } 
+  if (
+    name === "Garfield" ||
+    name === "Heathcliff"
+    ) {
+          animalNoise.push(name + ' says "Meow!"');
+      } 
+  else if (
+    name === "Sharp Tooth" || 
+    name === "Barnie"
+    ) {
+          animalNoise.push(name + ' says "ROWR."');
+      }
   }
-  for(i = 0; i < arr.length; i++){
-    if(arr[i].includes(animals.dogs)){
-      theone.push(arr[i] + ' says "Woof!"')
-    }
-    if(arr[i].includes(animals.cats)){
-      theone.push(arr[i] + ' says "Meow!"')
-    }
-    if(arr[i].includes(animals.dinos)){
-      theone.push(arr[i] + ' says "ROWR"')
-    }
-    return theone
-  }
-
-  }
+  return animalNoise;
+}
 
 function womenOnly(arr) {
   let gorls = []
